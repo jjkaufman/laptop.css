@@ -1,0 +1,113 @@
+:root {
+    --laptop-content:  '\A     _________________\A    |                 |\A    |                 |\A    |                 |\A    |                 |\A    |                 |\A    |                 |\A    |                 |\A    /.-.-.-.-.-.-.-.-.\\\A   /.-.-.-.-.-.-.-.-.-.\\\A  /.-.-.-.-.-.-.-.-.-.-.\\\A /______/__________\\_____\\ \A \\_______________________/';
+
+    --lap-width: 404px;
+    --lap-height: 370px;
+
+    --lap-img-margin-left: 72px;
+    --lap-img-margin-top: 32px;
+    --lap-img-margin-width: 255px;
+    --lap-img-margin-height: 180px;
+    --lap-img-border-width: 2px;
+
+    --lap-font-size: 32px;
+    --lap-left: -96px;
+    --lap-top: -72px;
+    --lap-padding-left: 96px;
+    --lap-padding-top: 32px;
+
+    --lg-scale: 2;
+    --sm-scale: .5;
+}
+
+.laptop{
+    position: relative;
+    font-size: 100%;
+    width: var(--lap-width);
+    height: var(--lap-height);
+    overflow: hidden;
+}
+.laptop img{
+    margin-left: var(--lap-img-margin-left);
+    margin-top: var(--lap-img-margin-top);
+    width: var(--lap-img-margin-width);
+    height: var(--lap-img-margin-height);
+    object-fit: contain;
+    background: black;
+    border: solid var(--lap-img-border-width);
+}
+.laptop::after {
+    content: var(--laptop-content);
+    white-space: pre;
+    position: absolute;
+    font-size: var(--lap-font-size);
+    left:  var(--lap-left);
+    top: var(--lap-top);
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: var(--lap-padding-left);
+    padding-top: var(--lap-padding-top);
+    line-height: .9em;
+    letter-spacing: -.1em;
+}
+
+.laptop-lg{
+    position: relative;
+    font-size: 100%;
+    width: calc(var(--lg-scale) * var(--lap-width));
+    height: calc(var(--lg-scale) * var(--lap-height));
+    overflow: hidden;
+}
+
+.laptop-lg img{
+    margin-left: calc(var(--lg-scale) * var(--lap-img-margin-left));
+    margin-top: calc(var(--lg-scale) * var(--lap-img-margin-top));
+    width: calc(var(--lg-scale) * var(--lap-img-margin-width));
+    height: calc(var(--lg-scale) * var(--lap-img-margin-height));
+    object-fit: contain;
+    background: black;
+    border: solid calc(var(--lg-scale) * var(--lap-img-border-width));
+}
+.laptop-lg::after {
+    content: var(--laptop-content);
+    white-space: pre;
+    position: absolute;
+    font-size: calc(var(--lg-scale) * var(--lap-font-size));
+    left:  calc(var(--lg-scale) * var(--lap-left));
+    top: calc(var(--lg-scale) * var(--lap-top));
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: calc(var(--lg-scale) * var(--lap-padding-left));
+    padding-top: calc(var(--lg-scale) * var(--lap-padding-top));
+    line-height: .9em;
+    letter-spacing: -.1em;
+}
+
+.laptop-sm{
+    position: relative;
+    font-size: 100%;
+    width: calc(var(--sm-scale) * var(--lap-width));
+    height: calc(var(--sm-scale) * var(--lap-height));
+    overflow: hidden;
+}
+
+.laptop-sm img{
+    margin-left: calc(var(--sm-scale) * var(--lap-img-margin-left));
+    margin-top: calc(var(--sm-scale) * var(--lap-img-margin-top));
+    width: calc(var(--sm-scale) * var(--lap-img-margin-width));
+    height: calc(var(--sm-scale) * var(--lap-img-margin-height));
+    object-fit: contain;
+    background: black;
+    border: solid calc(var(--sm-scale) * var(--lap-img-border-width));
+}
+.laptop-sm::after {
+    content: var(--laptop-content);
+    white-space: pre;
+    position: absolute;
+    font-size: calc(var(--sm-scale) * var(--lap-font-size));
+    left:  calc(var(--sm-scale) * var(--lap-left));
+    top: calc(var(--sm-scale) * var(--lap-top));
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: calc(var(--sm-scale) * var(--lap-padding-left));
+    padding-top: calc(var(--sm-scale) * var(--lap-padding-top));
+    line-height: .9em;
+    letter-spacing: -.1em;
+}
