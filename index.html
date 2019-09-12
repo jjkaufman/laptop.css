@@ -12,8 +12,9 @@
         }
 
         #github-link {
-            font-size: 4vw;
-            letter-spacing: -.05em;
+            font-size: 76px;
+            letter-spacing: -5px;
+            white-space: nowrap; 
         }
 
         .laptop {
@@ -40,17 +41,21 @@
         .center {
             text-align: center;
         }
+
+        tr.space>td {
+            padding-bottom: 32px;
+        }
     </style>
 </head>
 
 <body>
     <table>
-        <tr>
+        <tr class="space">
             <td>
-                <div class="laptop">
+                <!-- <div class="laptop">
                     <img
                         src="https://media2.giphy.com/media/YDj8Ot6mIbJYs/giphy.gif?cid=790b761101614b055d3ca1572710dd678d38809f56060247&rid=giphy.gif">
-                </div>
+                </div> -->
             </td>
             <td>
                 <div class="fat-row header">
@@ -72,7 +77,15 @@
             </td>
 
         </tr>
-        <tr>
+        <tr class="space">
+            <td>
+
+            </td>
+            <td style="font-size: 100px; padding-left:220px">
+                <u>Models</u>
+            </td>
+        </tr>
+        <tr class="space">
             <td>
                 <div class="center fat-row">
                     <i>sm</i>
@@ -97,7 +110,7 @@
                 </div>
             </td>
         </tr>
-        <tr>
+        <tr class="space">
             <td>
                 <div class="center fat-row">
                     <i>classic</i>
@@ -115,7 +128,7 @@
             </td>
 
         </tr>
-        <tr>
+        <tr class="space">
             <td>
                 <div class="center fat-row">
                     <i>lg</i>
@@ -128,11 +141,10 @@
                 </div>
             </td>
         </tr>
-
-
     </table>
-
-
+    <div id="github-link">
+        <a target="_blank" href="https://github.com/jjkaufman/laptop.css">https://github.com/jjkaufman/laptop.css</a>
+    </div>
 
 
 
