@@ -10,7 +10,7 @@ laptop.css provides three class names to use on divs
 
 3. laptop-lg
 
-Demo: 
+Demo: https://jjkaufman.github.io/laptop.css/index.html
 
 # Example
 
